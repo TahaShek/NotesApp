@@ -27,12 +27,8 @@
 // // CardContainer.append(notes)
 // }
 
-
 let CreateNotes=()=>{
-   let title=document.querySelector('.title').value
-   let work=document.querySelector('.Work').value
-console.log(title)
-console.log(work)
+   
 }
 
 
