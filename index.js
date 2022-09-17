@@ -28,7 +28,21 @@
 // }
 
 let CreateNotes=()=>{
-   
+   let title=document.querySelector('.title').value 
+   let work=document.querySelector('.Work').value
+let notes=document.querySelector('.Notes')
+notes.innerHTML += `
+<div class="col-md-4 col-sm-6 content-card">
+      <div class="card-big-shadow">
+          <div class="card card-just-text">
+              <div class="content">
+                  <h4 class="title">asdas</h4>
+                  <p class="description">sadas </p>
+              </div>
+          </div> <!-- end card -->
+      </div>
+  </div>
+`
 }
 
 
