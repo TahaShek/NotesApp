@@ -28,12 +28,12 @@
 // }
 
 
-let btn=document.querySelector('.btn')
-btn.addEventListener('click',()=>{
-  
-})
-
-
+let CreateNotes=()=>{
+   let title=document.querySelector('.title').value
+   let work=document.querySelector('.Work').value
+console.log(title)
+console.log(work)
+}
 
 
 
