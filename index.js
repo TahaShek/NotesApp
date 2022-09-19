@@ -5,22 +5,26 @@ btn.addEventListener('click',()=>{
   let title= document.querySelector('.title').value 
 let work =document.querySelector('.work').value 
   let CreateNotes=document.querySelector('.NotesContainer');
-  console.log(work)
-CreateNotes.innerHTML+= `
-<div class="col-md-4">
+  // console.log(work)
+let div=document.createElement('div')
+div.classList.add('col-md-4')
+
+div.innerHTML= `
 
 <div class="mb-3">
  <h3>${title}</h3>
  <textarea class="form-control " placeholder="Enter Your Work" name="" id="" rows="5">${work}</textarea>
-<button class="del">Delete</button>
+ <button type = "button" class = "btn del" id = "delete-all-btn">
+ <span><i class = "fas fa-trash"></i></span>
+ Delete All
+</button> 
 </div>
 
-
-</div>
 `
-CreateNotes.querySelector('.del')
-CreateNotes.addEventListener('click',()=>{
-  CreateNotes.remove()
+div.querySelector('.del')
+div.addEventListener('click',()=>{
+  div.remove()
 })
 
+CreateNotes.append(div)
 })
