@@ -5,7 +5,7 @@ btn.addEventListener('click',()=>{
   let title= document.querySelector('.title').value 
 let work =document.querySelector('.work').value 
   let CreateNotes=document.querySelector('.NotesContainer');
-  if(title==='' || work==='' || ){
+  if(title==='' || work==='' ){
     alert('Enter Valid Requirements')
   }
   else{
