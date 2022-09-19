@@ -8,9 +8,8 @@ let work =document.querySelector('.work').value
   if(title==='' || work===''){
     alert('Enter Valid Requirements')
   }
-  return
-  // console.log(work)
-let div=document.createElement('div')
+  else{
+    let div=document.createElement('div')
 div.classList.add('col-md-4')
 
 
@@ -30,4 +29,7 @@ div.addEventListener('click',()=>{
 })
 
 CreateNotes.append(div)
+  }
+  // console.log(work)
+
 })
